@@ -4,6 +4,9 @@ ruby '1.9.3'
 
 gem 'pg', '0.15.1'
 
+# Include 'rails_12factor' gem to enable all platform features
+gem 'rails_12factor'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 

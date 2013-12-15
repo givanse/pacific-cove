@@ -6,9 +6,7 @@ gem 'pg', '0.15.1'
 
 gem 'unicorn'
 
-group :development, :test do                                                     
-  gem 'rspec-rails', '2.13.1'                                                    
-  gem 'spork-rails', '~> 4.0.0'                                                  
+group :development do                                                     
   # Use debugger                                                                 
   gem 'columnize', '~> 0.3.6'                                                    
   gem 'debugger', group: [:development, :test]                                   
@@ -16,6 +14,8 @@ group :development, :test do
 end                                                                              
                                                                                  
 group :test do                                                                   
+  gem 'rspec-rails', '2.13.1'                                                    
+  gem 'spork-rails', '~> 4.0.0'                                                  
   gem 'selenium-webdriver', '~> 2.38.0'                                          
   gem 'capybara', '~> 2.2.0'                                                     
 end

@@ -4,8 +4,26 @@ ruby '1.9.3'
 
 gem 'pg', '0.15.1'
 
+gem 'unicorn'
+
+group :development, :test do                                                     
+  gem 'rspec-rails', '2.13.1'                                                    
+  gem 'spork-rails', '~> 4.0.0'                                                  
+  # Use debugger                                                                 
+  gem 'columnize', '~> 0.3.6'                                                    
+  gem 'debugger', group: [:development, :test]                                   
+  gem 'foreman', '~> 0.63.0'
+end                                                                              
+                                                                                 
+group :test do                                                                   
+  gem 'selenium-webdriver', '~> 2.38.0'                                          
+  gem 'capybara', '~> 2.2.0'                                                     
+end
+
 # Include 'rails_12factor' gem to enable all platform features
-gem 'rails_12factor'
+group :production do                                                             
+  gem 'rails_12factor'                                                           
+end 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'

@@ -4,12 +4,14 @@ ruby '1.9.3'
 
 gem 'pg', '0.15.1'
 
+# Use unicorn as the app server
 gem 'unicorn'
 
 group :development do                                                     
   # Use debugger                                                                 
   gem 'columnize', '~> 0.3.6'                                                    
   gem 'debugger', group: [:development, :test]                                   
+
   gem 'foreman', '~> 0.63.0'
 end                                                                              
                                                                                  
@@ -57,11 +59,7 @@ end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
-# Use unicorn as the app server
-# gem 'unicorn'
-
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
-# Use debugger
-# gem 'debugger', group: [:development, :test]
+#EOF

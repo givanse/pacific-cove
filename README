@@ -8,9 +8,11 @@ rails new pacific-cove -d postgresql --skip
 
 cd pacific-cove
 
-bundle update
+bundle install
 
-rails generate refinery:cms --fresh-installation
+rails generate comfy:cms 
+
+rake db:migrate
 
 foreman run
 

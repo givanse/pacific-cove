@@ -7,6 +7,8 @@ gem 'pg', '0.15.1'
 # Use unicorn as the app server
 gem 'unicorn'
 
+gem 'browsercms', '3.5.7'
+
 group :development do                                                     
   # Use debugger                                                                 
   gem 'columnize', '~> 0.3.6'                                                    
@@ -43,7 +45,7 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   # Use jquery as the JavaScript library
-  gem 'jquery-rails'
+  gem 'jquery-rails', '~> 2.0'
 
   # Turbolinks makes following links in your web application faster. 
   # Read more: https://github.com/rails/turbolinks
@@ -65,3 +67,5 @@ group :doc do
 end
 
 #EOF
+
+gem "browsercms", "3.5.7"

@@ -50,4 +50,6 @@ PacificCove::Application.routes.draw do
   # just remember to delete public/index.html.
   root :to => 'static_pages#index'
 
+
+  mount_browsercms
 end

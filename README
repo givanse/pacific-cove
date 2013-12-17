@@ -1,0 +1,8 @@
+
+rails new pacific-cove -d postgresql
+
+cd pacific-cove
+
+createdb -U ivan -O rails pacific-cove_development
+
+foreman start

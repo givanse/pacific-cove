@@ -1,0 +1,23 @@
+
+rvm gemset create locomotive
+
+rvm gemset use locomotive
+
+gem install rails -v 3.2.16 
+
+rvm use ruby-1.9.3-p484@locomotive
+
+rails new app-name
+
+cd app-name
+
+bundle install
+
+rails generate locomotive:install
+
+mongo < database-mongo.js
+
+bundle exec rake assets:precompile
+
+foreman start
+

@@ -7,6 +7,9 @@ gem 'pg', '0.15.1'
 # Use unicorn as the app server
 gem 'unicorn'
 
+gem 'sqlite3'
+gem 'locomotive_cms', '~> 2.4.1', :require => 'locomotive/engine'
+
 group :development do                                                     
   # Use debugger                                                                 
   gem 'columnize', '~> 0.3.6'                                                    
@@ -27,23 +30,30 @@ group :production do
   gem 'rails_12factor'                                                           
 end 
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+group :assets do
+  
+  gem 'compass-rails',  '~> 1.0.2'  
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+  # Use SCSS for stylesheets
+  gem 'sass-rails'
 
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+  # Use Uglifier as compressor for JavaScript assets
+  gem 'uglifier', '>= 1.3.0'
 
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+  # Use CoffeeScript for .js.coffee assets and views
+  gem 'coffee-rails'
 
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+  # If you run your engine on **Linux,** you also have to add the following gem
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  gem 'therubyracer', :platforms => :ruby
+
+end
+
+# Bundle edge Rails instead: gem 'ails', github: 'rails/rails'
+gem 'rails', '~> 3.2.16'
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 2.1.4'
 
 # Turbolinks makes following links in your web application faster. 
 # Read more: https://github.com/rails/turbolinks

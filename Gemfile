@@ -7,6 +7,11 @@ gem 'pg', '0.15.1'
 # Use unicorn as the app server
 gem 'unicorn'
 
+gem 'refinerycms-i18n', github: 'refinery/refinerycms-i18n', branch: 'master'
+gem 'refinerycms', github: 'refinery/refinerycms', branch: "master"
+# Strong parameters is a new feature not used by Refinery
+gem 'protected_attributes'
+
 group :development do                                                     
   # Use debugger                                                                 
   gem 'columnize', '~> 0.3.6'                                                    

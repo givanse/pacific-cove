@@ -1,0 +1,16 @@
+
+
+git clean -f -d
+
+createdb -U ivan -O rails default_dev
+
+rails new pacific-cove -d postgresql --skip
+
+cd pacific-cove
+
+bundle update
+
+rails generate refinery:cms --fresh-installation
+
+foreman run
+
